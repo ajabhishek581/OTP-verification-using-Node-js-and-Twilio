@@ -37,7 +37,7 @@ app.post("/sendOTP", (req, res) => {
     .create({
       body: `Your One Time Login Password For CFM is ${otp}`,
       //   messagingServiceSid: "MGa6dbe4617439e9c93d8bcba6cb34ec7e",
-      from: +13203453934,
+      from: <twilio number>,
       to: phone,
     })
     .then((messages) => console.log(messages))
